@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <script>
+        function myBack()
+        {
+            let str=document.getElementById('txtBox').value;
+            let myLen=str.length;
+            let myData=str.slice(0,myLen-1);
+            document.getElementById('txtBox').value=myData;
+        }
+    </script>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div id="box">
+    <input type=text id="txtBox">
+   <button id="Btn1" value="1" onclick="document.getElementById('txtBox').value+=
+     document.getElementById('Btn1').value">1</button>
+
+     <button id="Btn2" value="2" onclick="document.getElementById('txtBox').value+=
+     document.getElementById('Btn2').value">2</button>
+
+     <button id="Btn3" value="3" onclick="document.getElementById('txtBox').value+=
+     document.getElementById('Btn3').value">3</button>
+
+     <button id="Btn4" value="4" onclick="document.getElementById('txtBox').value+=
+     document.getElementById('Btn4').value">4</button>
+
+     <button id="Btn5" value="5" onclick="document.getElementById('txtBox').value+=
+     document.getElementById('Btn5').value">5</button>
+
+    <button id="Btn6" value="6" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btn6').value">6</button>
+
+    <button id="Btn7" value="7" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btn7').value">7</button>
+
+    <button id="Btn8" value="8" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btn8').value">8</button>
+
+    <button id="Btn9" value="9" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btn9').value">9</button>
+
+    <button id="Btn0" value="0" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btn0').value">0</button>
+
+    <button id="Btndot" value="." onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btndot').value">.</button>
+
+    <button id="Btnplus" value="+" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btnplus').value">+</button>
+
+    <button id="Btnminus" value="-" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btnminus').value">-</button>
+
+    <button id="Btnmulti" value="*" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btnmulti').value">*</button>
+
+    <button id="Btndiv" value="/" onclick="document.getElementById('txtBox').value+=
+    document.getElementById('Btndiv').value">/</button>
+
+   <button id="Btnans" value="=" onclick="document.getElementById('txtBox').value=
+   eval(document.getElementById('txtBox').value)">=</button>
+
+   <button style="width: 100px;" onclick="document.getElementById('txtBox').value=''">CLR</button>
+   <button style="width:100px" onclick="myBack();">Back</button>
+
+     </div>
+</body>
+</html>
